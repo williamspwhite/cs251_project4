@@ -12,7 +12,14 @@ public class RegNet
 
         UnionFind union = new UnionFind(tempGraph.V());
 
-        int
+        int numTempGraphEdges = tempGraph.E();
+        int numMSTEdges = 0;
+
+        int sortedEdges_index = 0;
+
+        while (numMSTEdges < (numTempGraphEdges - 1)) {
+            if (union.find(sortedEdges.get(sortedEdges_index).ui())
+        }
 
 
 
